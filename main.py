@@ -30,7 +30,6 @@ def checkBloodPressure(systolic, diastolic):
 
     return
 
-
 print 'Initializing heart monitor'
 data = json.load(open('heartdata.json'))
 
