@@ -1,5 +1,6 @@
 import json
 import time
+import sys
 from pprint import pprint
 
 def checkPulse(pulse):
@@ -31,8 +32,11 @@ def checkBloodPressure(systolic, diastolic):
     return
 
 print 'Initializing heart monitor'
-data = json.load(open('heartdata.json'))
-
+try:
+    data = json.load(open('heartdata.json'))
+except:
+    print 'Could not connect to sensor/could not open file heartdata.json'
+    sys.exit(1)
 
 # print len(data["heartdata"])
 # pprint(data["heartdata"][0]["heartrate"])
