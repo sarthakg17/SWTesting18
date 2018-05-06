@@ -1,3 +1,5 @@
+# Author : Tanjina Islam
+# Creation Date : 3rd May, 2018
 
 class Patient:
     def __init__(self, name, age, pulse, oxygen_level, sistolic_bp, diastolic_bp):
@@ -11,20 +13,20 @@ class Patient:
 
     @property
     def patient_name(self):
-        return self.name
+        return str(self.name)
 
     @property
     def patient_age(self):
-        return self.age
+        return str(self.age)
 
     @property
     def patient_pulse(self):
-        return self.pulse + ' bpm'
+        return str(self.pulse) + ' bpm'
 
     @property
     def patient_oxygen_level(self):
-        return self.oxygen_level + ' mm Hg'
+        return str(self.oxygen_level) + ' mm Hg'
 
     @property
     def patient_blood_pressure(self):
-        return self.patient_sistolic_bp + '/' + self.patient_diastolic_bp + ' mm Hg'
+        return str(self.sistolic_bp) + '/' + str(self.diastolic_bp) + ' mm Hg'

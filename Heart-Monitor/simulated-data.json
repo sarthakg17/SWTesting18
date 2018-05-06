@@ -1,0 +1,623 @@
+[{
+    "1": [
+      {
+        "pulse": "100",
+        "oxygen_level": "88",
+        "sistolic_bp": "169",
+        "diastolic_bp": "167"
+      },
+      {
+        "pulse": "93",
+        "oxygen_level": "1",
+        "sistolic_bp": "128",
+        "diastolic_bp": "118"
+      },
+      {
+        "pulse": "178",
+        "oxygen_level": "122",
+        "sistolic_bp": "105",
+        "diastolic_bp": "102"
+      },
+      {
+        "pulse": "164",
+        "oxygen_level": "180",
+        "sistolic_bp": "74",
+        "diastolic_bp": "188"
+      },
+      {
+        "pulse": "129",
+        "oxygen_level": "59",
+        "sistolic_bp": "146",
+        "diastolic_bp": "188"
+      },
+      {
+        "pulse": "164",
+        "oxygen_level": "46",
+        "sistolic_bp": "19",
+        "diastolic_bp": "165"
+      },
+      {
+        "pulse": "89",
+        "oxygen_level": "194",
+        "sistolic_bp": "148",
+        "diastolic_bp": "121"
+      },
+      {
+        "pulse": "112",
+        "oxygen_level": "56",
+        "sistolic_bp": "36",
+        "diastolic_bp": "135"
+      },
+      {
+        "pulse": "119",
+        "oxygen_level": "168",
+        "sistolic_bp": "159",
+        "diastolic_bp": "157"
+      },
+      {
+        "pulse": "3",
+        "oxygen_level": "120",
+        "sistolic_bp": "148",
+        "diastolic_bp": "60"
+      }
+    ],
+    "2": [
+      {
+        "pulse": "119",
+        "oxygen_level": "152",
+        "sistolic_bp": "149",
+        "diastolic_bp": "2"
+      },
+      {
+        "pulse": "93",
+        "oxygen_level": "82",
+        "sistolic_bp": "48",
+        "diastolic_bp": "151"
+      },
+      {
+        "pulse": "184",
+        "oxygen_level": "105",
+        "sistolic_bp": "35",
+        "diastolic_bp": "189"
+      },
+      {
+        "pulse": "20",
+        "oxygen_level": "76",
+        "sistolic_bp": "26",
+        "diastolic_bp": "46"
+      },
+      {
+        "pulse": "120",
+        "oxygen_level": "142",
+        "sistolic_bp": "0",
+        "diastolic_bp": "104"
+      },
+      {
+        "pulse": "98",
+        "oxygen_level": "133",
+        "sistolic_bp": "21",
+        "diastolic_bp": "82"
+      },
+      {
+        "pulse": "197",
+        "oxygen_level": "141",
+        "sistolic_bp": "138",
+        "diastolic_bp": "24"
+      },
+      {
+        "pulse": "44",
+        "oxygen_level": "103",
+        "sistolic_bp": "154",
+        "diastolic_bp": "155"
+      },
+      {
+        "pulse": "84",
+        "oxygen_level": "161",
+        "sistolic_bp": "166",
+        "diastolic_bp": "143"
+      },
+      {
+        "pulse": "111",
+        "oxygen_level": "90",
+        "sistolic_bp": "11",
+        "diastolic_bp": "155"
+      }
+    ],
+    "3": [
+      {
+        "pulse": "98",
+        "oxygen_level": "49",
+        "sistolic_bp": "49",
+        "diastolic_bp": "159"
+      },
+      {
+        "pulse": "192",
+        "oxygen_level": "156",
+        "sistolic_bp": "37",
+        "diastolic_bp": "97"
+      },
+      {
+        "pulse": "32",
+        "oxygen_level": "154",
+        "sistolic_bp": "148",
+        "diastolic_bp": "160"
+      },
+      {
+        "pulse": "58",
+        "oxygen_level": "135",
+        "sistolic_bp": "146",
+        "diastolic_bp": "104"
+      },
+      {
+        "pulse": "171",
+        "oxygen_level": "97",
+        "sistolic_bp": "27",
+        "diastolic_bp": "95"
+      },
+      {
+        "pulse": "146",
+        "oxygen_level": "36",
+        "sistolic_bp": "12",
+        "diastolic_bp": "6"
+      },
+      {
+        "pulse": "136",
+        "oxygen_level": "97",
+        "sistolic_bp": "83",
+        "diastolic_bp": "179"
+      },
+      {
+        "pulse": "76",
+        "oxygen_level": "130",
+        "sistolic_bp": "130",
+        "diastolic_bp": "188"
+      },
+      {
+        "pulse": "190",
+        "oxygen_level": "163",
+        "sistolic_bp": "57",
+        "diastolic_bp": "72"
+      },
+      {
+        "pulse": "132",
+        "oxygen_level": "182",
+        "sistolic_bp": "147",
+        "diastolic_bp": "109"
+      }
+    ],
+    "4": [
+      {
+        "pulse": "45",
+        "oxygen_level": "178",
+        "sistolic_bp": "120",
+        "diastolic_bp": "195"
+      },
+      {
+        "pulse": "97",
+        "oxygen_level": "101",
+        "sistolic_bp": "185",
+        "diastolic_bp": "132"
+      },
+      {
+        "pulse": "153",
+        "oxygen_level": "37",
+        "sistolic_bp": "146",
+        "diastolic_bp": "35"
+      },
+      {
+        "pulse": "65",
+        "oxygen_level": "82",
+        "sistolic_bp": "120",
+        "diastolic_bp": "80"
+      },
+      {
+        "pulse": "51",
+        "oxygen_level": "80",
+        "sistolic_bp": "110",
+        "diastolic_bp": "70"
+      },
+      {
+        "pulse": "84",
+        "oxygen_level": "37",
+        "sistolic_bp": "19",
+        "diastolic_bp": "69"
+      },
+      {
+        "pulse": "141",
+        "oxygen_level": "5",
+        "sistolic_bp": "46",
+        "diastolic_bp": "35"
+      },
+      {
+        "pulse": "51",
+        "oxygen_level": "190",
+        "sistolic_bp": "40",
+        "diastolic_bp": "83"
+      },
+      {
+        "pulse": "181",
+        "oxygen_level": "103",
+        "sistolic_bp": "104",
+        "diastolic_bp": "43"
+      },
+      {
+        "pulse": "146",
+        "oxygen_level": "147",
+        "sistolic_bp": "15",
+        "diastolic_bp": "152"
+      }
+    ],
+    "5": [
+      {
+        "pulse": "121",
+        "oxygen_level": "74",
+        "sistolic_bp": "100",
+        "diastolic_bp": "80"
+      },
+      {
+        "pulse": "90",
+        "oxygen_level": "179",
+        "sistolic_bp": "140",
+        "diastolic_bp": "90"
+      },
+      {
+        "pulse": "103",
+        "oxygen_level": "92",
+        "sistolic_bp": "130",
+        "diastolic_bp": "80"
+      },
+      {
+        "pulse": "183",
+        "oxygen_level": "28",
+        "sistolic_bp": "156",
+        "diastolic_bp": "194"
+      },
+      {
+        "pulse": "17",
+        "oxygen_level": "37",
+        "sistolic_bp": "81",
+        "diastolic_bp": "94"
+      },
+      {
+        "pulse": "87",
+        "oxygen_level": "151",
+        "sistolic_bp": "40",
+        "diastolic_bp": "153"
+      },
+      {
+        "pulse": "94",
+        "oxygen_level": "179",
+        "sistolic_bp": "193",
+        "diastolic_bp": "177"
+      },
+      {
+        "pulse": "142",
+        "oxygen_level": "200",
+        "sistolic_bp": "100",
+        "diastolic_bp": "160"
+      },
+      {
+        "pulse": "129",
+        "oxygen_level": "51",
+        "sistolic_bp": "44",
+        "diastolic_bp": "91"
+      },
+      {
+        "pulse": "106",
+        "oxygen_level": "155",
+        "sistolic_bp": "52",
+        "diastolic_bp": "76"
+      }
+    ],
+    "6": [
+      {
+        "pulse": "95",
+        "oxygen_level": "123",
+        "sistolic_bp": "163",
+        "diastolic_bp": "164"
+      },
+      {
+        "pulse": "115",
+        "oxygen_level": "112",
+        "sistolic_bp": "173",
+        "diastolic_bp": "181"
+      },
+      {
+        "pulse": "7",
+        "oxygen_level": "2",
+        "sistolic_bp": "152",
+        "diastolic_bp": "67"
+      },
+      {
+        "pulse": "150",
+        "oxygen_level": "16",
+        "sistolic_bp": "66",
+        "diastolic_bp": "53"
+      },
+      {
+        "pulse": "73",
+        "oxygen_level": "147",
+        "sistolic_bp": "28",
+        "diastolic_bp": "122"
+      },
+      {
+        "pulse": "197",
+        "oxygen_level": "46",
+        "sistolic_bp": "113",
+        "diastolic_bp": "111"
+      },
+      {
+        "pulse": "49",
+        "oxygen_level": "124",
+        "sistolic_bp": "161",
+        "diastolic_bp": "113"
+      },
+      {
+        "pulse": "116",
+        "oxygen_level": "165",
+        "sistolic_bp": "183",
+        "diastolic_bp": "72"
+      },
+      {
+        "pulse": "69",
+        "oxygen_level": "168",
+        "sistolic_bp": "120",
+        "diastolic_bp": "174"
+      },
+      {
+        "pulse": "165",
+        "oxygen_level": "53",
+        "sistolic_bp": "170",
+        "diastolic_bp": "36"
+      }
+    ],
+    "7": [
+      {
+        "pulse": "15",
+        "oxygen_level": "133",
+        "sistolic_bp": "18",
+        "diastolic_bp": "67"
+      },
+      {
+        "pulse": "99",
+        "oxygen_level": "89",
+        "sistolic_bp": "145",
+        "diastolic_bp": "114"
+      },
+      {
+        "pulse": "127",
+        "oxygen_level": "146",
+        "sistolic_bp": "134",
+        "diastolic_bp": "83"
+      },
+      {
+        "pulse": "83",
+        "oxygen_level": "166",
+        "sistolic_bp": "85",
+        "diastolic_bp": "194"
+      },
+      {
+        "pulse": "189",
+        "oxygen_level": "195",
+        "sistolic_bp": "168",
+        "diastolic_bp": "197"
+      },
+      {
+        "pulse": "165",
+        "oxygen_level": "156",
+        "sistolic_bp": "128",
+        "diastolic_bp": "50"
+      },
+      {
+        "pulse": "45",
+        "oxygen_level": "193",
+        "sistolic_bp": "123",
+        "diastolic_bp": "58"
+      },
+      {
+        "pulse": "130",
+        "oxygen_level": "34",
+        "sistolic_bp": "60",
+        "diastolic_bp": "82"
+      },
+      {
+        "pulse": "174",
+        "oxygen_level": "29",
+        "sistolic_bp": "127",
+        "diastolic_bp": "93"
+      },
+      {
+        "pulse": "102",
+        "oxygen_level": "180",
+        "sistolic_bp": "16",
+        "diastolic_bp": "145"
+      }
+    ],
+    "8": [
+      {
+        "pulse": "195",
+        "oxygen_level": "183",
+        "sistolic_bp": "56",
+        "diastolic_bp": "103"
+      },
+      {
+        "pulse": "21",
+        "oxygen_level": "85",
+        "sistolic_bp": "19",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "122",
+        "oxygen_level": "196",
+        "sistolic_bp": "100",
+        "diastolic_bp": "90"
+      },
+      {
+        "pulse": "180",
+        "oxygen_level": "172",
+        "sistolic_bp": "160",
+        "diastolic_bp": "120"
+      },
+      {
+        "pulse": "71",
+        "oxygen_level": "77",
+        "sistolic_bp": "129",
+        "diastolic_bp": "127"
+      },
+      {
+        "pulse": "88",
+        "oxygen_level": "52",
+        "sistolic_bp": "189",
+        "diastolic_bp": "32"
+      },
+      {
+        "pulse": "117",
+        "oxygen_level": "6",
+        "sistolic_bp": "42",
+        "diastolic_bp": "138"
+      },
+      {
+        "pulse": "139",
+        "oxygen_level": "165",
+        "sistolic_bp": "120",
+        "diastolic_bp": "60"
+      },
+      {
+        "pulse": "175",
+        "oxygen_level": "132",
+        "sistolic_bp": "151",
+        "diastolic_bp": "68"
+      },
+      {
+        "pulse": "56",
+        "oxygen_level": "132",
+        "sistolic_bp": "33",
+        "diastolic_bp": "191"
+      }
+    ],
+    "9": [
+      {
+        "pulse": "59",
+        "oxygen_level": "98",
+        "sistolic_bp": "130",
+        "diastolic_bp": "70"
+      },
+      {
+        "pulse": "59",
+        "oxygen_level": "98",
+        "sistolic_bp": "130",
+        "diastolic_bp": "70"
+      },
+      {
+        "pulse": "62",
+        "oxygen_level": "98",
+        "sistolic_bp": "120",
+        "diastolic_bp": "70"
+      },
+      {
+        "pulse": "74",
+        "oxygen_level": "89",
+        "sistolic_bp": "110",
+        "diastolic_bp": "65"
+      },
+      {
+        "pulse": "128",
+        "oxygen_level": "147",
+        "sistolic_bp": "81",
+        "diastolic_bp": "161"
+      },
+      {
+        "pulse": "40",
+        "oxygen_level": "90",
+        "sistolic_bp": "100",
+        "diastolic_bp": "80"
+      },
+      {
+        "pulse": "59",
+        "oxygen_level": "98",
+        "sistolic_bp": "130",
+        "diastolic_bp": "70"
+      },
+      {
+        "pulse": "59",
+        "oxygen_level": "98",
+        "sistolic_bp": "130",
+        "diastolic_bp": "70"
+      },
+      {
+        "pulse": "157",
+        "oxygen_level": "56",
+        "sistolic_bp": "110",
+        "diastolic_bp": "80"
+      },
+      {
+        "pulse": "60",
+        "oxygen_level": "95",
+        "sistolic_bp": "120",
+        "diastolic_bp": "70"
+      }
+    ],
+    "10": [
+      {
+        "pulse": "98",
+        "oxygen_level": "88",
+        "sistolic_bp": "140",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "98",
+        "oxygen_level": "88",
+        "sistolic_bp": "140",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "98",
+        "oxygen_level": "88",
+        "sistolic_bp": "140",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "98",
+        "oxygen_level": "88",
+        "sistolic_bp": "140",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "98",
+        "oxygen_level": "88",
+        "sistolic_bp": "140",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "68",
+        "oxygen_level": "88",
+        "sistolic_bp": "120",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "98",
+        "oxygen_level": "88",
+        "sistolic_bp": "140",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "78",
+        "oxygen_level": "84",
+        "sistolic_bp": "140",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "98",
+        "oxygen_level": "88",
+        "sistolic_bp": "130",
+        "diastolic_bp": "100"
+      },
+      {
+        "pulse": "88",
+        "oxygen_level": "90",
+        "sistolic_bp": "130",
+        "diastolic_bp": "90"
+      }
+    ]
+  }
+]

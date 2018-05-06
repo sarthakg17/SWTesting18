@@ -1,63 +1,134 @@
+# Author : Tanjina Islam
+# Creation Date : 3rd May, 2018
+
 from .. Simulation import simulation
 from faker import Faker
+import time
+import sys
+import json
 
+def checkPulse(pulse):
+    if int(pulse) < 60:
+        print ('WARNING: PULSE IS TOO LOW : ' + str(pulse) +  ' beats per minute')
+    elif int(pulse) >= 100:
+        print ('WARNING: PULSE IS TOO HIGH : ' + str(pulse) +  ' beats per minute')
 
-print ("*** Select patient from the list to monitor his/her heart beat ***")
+    return
 
+def checkOxygenLevel(oxygen):
+    if int(oxygen) < 80:
+        print ( 'WARNING: OXYGEN LEVEL IS TOO LOW : ' + str(oxygen) +  ' millimeters of mercury')
+    elif int(oxygen) > 100:
+        print ('WARNING: OXYGEN LEVEL IS TOO HIGH : ' + str(oxygen) +  ' millimeters of mercury')
+    return
 
-# Print patient list
-print("Patient ID :\t" + "Patient Name")
-print("--------------------------------------------")
-count = 1
+def checkBloodPressure(systolic, diastolic):
+    if int(systolic) > 120 and int(systolic) < 130  and int(diastolic) < 80:
+        print ('Blood pressure is elevated : ' + str(systolic) + '/' + str(diastolic) +  ' mm Hg')
+    elif int(systolic) > 130 and int(systolic) < 140 or int(diastolic) > 80 and int(diastolic) < 90:
+        print ('WARNING: HIGH BLOOD PRESSURE : ' + str(systolic) + '/' + str(diastolic) +  ' mm Hg')
+    elif int(systolic) > 140 or int(diastolic) > 90:
+        print ('WARNING: HIGH BLOOD PRESSURE STAGE 2 : ' + str(systolic) + '/' + str(diastolic) +  ' mm Hg')
+    elif int(systolic) > 180 or int(diastolic) > 120:
+        print ('WARNING: HIGH BLOOD PRESSURE HYPERTENSIVE CRISIS : ' + str(systolic) + '/' + str(diastolic) +  ' mm Hg')
 
-# Create Patient Name
-fake = Faker('nl_NL')
-fake.random.seed(54321)
+    return
 
-patients = simulation.SimulationTest.setUp(fake)
-
-
-
-# print(patients)
-for patient in  patients:
-    print("\t" + str(count) + "\t" + patient.patient_name)
-    count = count + 1
 
 # Prompt for user input
 
-patient_record = input("Type patient ID to check his/her record: ")
+def user_input():
 
+  ### Need to check for Incalid input (for example : 0, > 10 -1) ###
+
+  patient_record = input("Type patient ID to check his/her record: ")
+
+  try:
+    val = int(patient_record)
+  except ValueError:
+    print("That's not an int! Type Integer ID")
+    patient_record = input("Type patient ID to check his/her record: ")
+
+  return patient_record
+
+
+
+# Simulate 10 patients
+
+fake = Faker('nl_NL')
+fake.random.seed(54321)
+patients = simulation.SimulationTest.setUp(fake)
+
+# print(patients)
+def print_patient_list():
+  print ("*** Select patient from the list to monitor his/her heart beat ***")
+  # Print patient list
+  print("Patient ID :\t" + "Patient Name")
+  print("--------------------------------------------")
+  count = 1
+  for patient in  patients:
+    print("\t" + str(count) + "\t" + patient.patient_name)
+    count = count + 1
+
+print_patient_list()    
+
+# Prompt for user input
+
+patient_record = user_input()
+
+print ("Initializing heart monitor")
 try:
-   val = int(patient_record)
-except ValueError:
-   print("That's not an int! Type Integer ID")
-   patient_record = input("Type patient ID to check his/her record: ")
+    data = json.load(open("simulated-data.json"))
+except:
+    print ("Could not connect to sensor/could not open file simulated-data.json")
+    sys.exit(1)
 
-# Create patient record
+def monitorPatient(id):
 
+  #if(patient_record == '1'):
 
-# patientRecords = {'1': {'name': 'Robert', 'age': '45', 'pulse': '69', 'oxygenlevel': '88', 'bloodpressure': {'systolic': '100', 'diastolic': '67'} },'2': {'name': 'Smith', 'age': '50', 'pulse': '50', 'oxygenlevel': '75', 'bloodpressure': {'systolic': '120', 'diastolic': '70'} }}
+    print("Name : " + patients[0].patient_name)
+    print("Age : " + patients[0].patient_age)
+    print("Pulse Rate : " + patients[0].patient_pulse)
+    print("Oxygen Level : " + patients[0].patient_oxygen_level)
+    print("Blood Pressure : " + patients[0].patient_blood_pressure)
+    print ('----------------------------------------------------------------------------------')
 
-# print("Patient's ID: " + str(patient_record))
-# print("Patient's Name: " + patientRecords[str(patient_record)]['name'])
-# print("Age: " + patientRecords[str(patient_record)]['age'])
+    curr = data[0][id]
+    #print(curr)
+    for i in range(0, 10):
+      print("Pulse Rate : " + str(curr[i]['pulse']) + ' bpm')
+      print("Oxygen Level : " + str(curr[i]['oxygen_level'])  + ' mm Hg')
+      print("Blood Pressure : " + str(curr[i]['sistolic_bp']) + "/" + str(curr[i]['diastolic_bp'])  + ' mm Hg')
+      print ('\n')
+      checkPulse(curr[i]['pulse'])
+      checkOxygenLevel(curr[i]['oxygen_level'])
+      checkBloodPressure(curr[i]['sistolic_bp'],curr[i]['diastolic_bp'])
+      print ('----------------------------------------------------------------------------------')
+      time.sleep(1)
 
+  
 
-patientRecords = {}
+    time.sleep(2)
+    print ('End of sequence, turning off heart monitor for patient ' + str(id))
 
-for a, b in enumerate(patients):
-    patientRecords[a+1] = b
+#while (patient_record != None):
+monitorPatient(patient_record)
 
-# for key, value in patientRecords.items() :
-    # print (key, value)
+print ('----------------------------------------------------------------------------------')
 
-for id in patientRecords.keys():
-    # print(id)
-    # print(patient_record)
-    # print(patientRecords[id])
+### NEED To implement something like while true with exit condition ###
 
-# need to match key with user input somehow!!! Now it's not working
-    if id == patient_record:
-        print(id)
-        print(patient_record)
-        print(patientRecords[id].patient_name)
+print ('\n')
+print ('Continue Monitoring....')
+print ('\n')
+
+# print(patients)
+print_patient_list()
+ 
+# Prompt for user input
+
+patient_record = user_input()
+monitorPatient(patient_record)
+
+### NEED To implement something like while true with exit condition ###
