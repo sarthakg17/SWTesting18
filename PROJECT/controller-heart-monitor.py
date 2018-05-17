@@ -2,8 +2,8 @@
 # Creation Date : 3rd May, 2018
 
 #from .. Simulation import simulation
-import simulation
-from faker import Faker
+#import simulation
+#from faker import Faker
 import time
 import sys
 import json
@@ -56,9 +56,14 @@ def user_input():
 
 # Simulate 10 patients
 
-fake = Faker('nl_NL')
-fake.random.seed(54321)
-patients = simulation.SimulationTest.setUp(fake)
+
+
+#fake = Faker('nl_NL')
+#fake.random.seed(54321)
+#patients = simulation.SimulationTest.setUp(fake)
+
+patients = ["Olivia Dorsman-Phillipsen", "Leah Schwartsbach", "Amelia Ehlert-Helmerhorst", "Benjamin Boudewijns-van Geest", "Janne Linschoten",
+"Jade van Brenen", "David Smit", "Rayan Krabbe-Verkade", "Hidde van Oosten-van Breukelveen", "Helena der Kijnder"]
 
 # print(patients)
 def print_patient_list():
@@ -66,9 +71,10 @@ def print_patient_list():
   # Print patient list
   print("Patient ID :\t" + "Patient Name")
   print("--------------------------------------------")
+  print(patients)
   count = 1
-  for patient in  patients:
-    print("\t" + str(count) + "\t" + patient.patient_name)
+  for i in  range(0, len(patients)):
+    print("\t" + str(count) + "\t" + patients[int(i)])
     count = count + 1
 
 print_patient_list()    
@@ -76,6 +82,26 @@ print_patient_list()
 # Prompt for user input
 
 patient_record = user_input()
+
+patientRecords = {'1': {'name': 'Olivia Dorsman-Phillipsen', 'age': '45', 'pulse': '69', 'oxygenlevel': '88', 'bloodpressure': {'systolic': '100', 'diastolic': '70'} },
+ '2': {'name': 'Leah Schwartsbach', 'age': '50', 'pulse': '50', 'oxygenlevel': '75', 'bloodpressure': {'systolic': '120', 'diastolic': '80'} },
+  '3': {'name': 'Amelia Ehlert-Helmerhorst', 'age': '50', 'pulse': '50', 'oxygenlevel': '75', 'bloodpressure': {'systolic': '120', 'diastolic': '70'} },
+   '4': {'name': 'Benjamin Boudewijns-van Geest', 'age': '50', 'pulse': '53', 'oxygenlevel': '95', 'bloodpressure': {'systolic': '140', 'diastolic': '90'} },
+    '5': {'name': 'Janne Linschoten', 'age': '28', 'pulse': '89', 'oxygenlevel': '75', 'bloodpressure': {'systolic': '120', 'diastolic': '70'} },
+     '6': {'name': 'Jade van Brenen', 'age': '40', 'pulse': '50', 'oxygenlevel': '75', 'bloodpressure': {'systolic': '110', 'diastolic': '80'} },
+      '7': {'name': 'David Smit', 'age': '35', 'pulse': '70', 'oxygenlevel': '67', 'bloodpressure': {'systolic': '140', 'diastolic': '100'} },
+       '8': {'name': 'Rayan Krabbe-Verkade', 'age': '58', 'pulse': '50', 'oxygenlevel': '72', 'bloodpressure': {'systolic': '90', 'diastolic': '50'} },
+        '9': {'name': 'Hidde van Oosten-van Breukelveen', 'age': '50', 'pulse': '50', 'oxygenlevel': '75', 'bloodpressure': {'systolic': '120', 'diastolic': '70'} },
+         '10': {'name': 'Helena der Kijnder', 'age': '38', 'pulse': '68', 'oxygenlevel': '67', 'bloodpressure': {'systolic': '110', 'diastolic': '70'} }}
+
+print ('\n')
+print("Patient's ID: " + str(patient_record))
+print("Patient's Name: " + patientRecords[str(patient_record)]['name'])
+print("Age: " + patientRecords[str(patient_record)]['age'])
+print("Pulse Rate : " + patientRecords[str(patient_record)]['pulse'] +  ' bpm')
+print("Oxygen Level : " + patientRecords[str(patient_record)]['oxygenlevel'] +  ' mm Hg')
+print("Blood Pressure : " + patientRecords[str(patient_record)]['bloodpressure']['systolic'] + '/' + patientRecords[str(patient_record)]['bloodpressure']['diastolic'] +  ' mm Hg')
+print ('----------------------------------------------------------------------------------')
 
 print ("Initializing heart monitor")
 print ('\n')
@@ -89,11 +115,11 @@ def monitorPatient(id):
 
   #if(patient_record == '1'):
 
-    print("Name : " + patients[int(id) - 1].patient_name)
-    print("Age : " + patients[int(id) - 1].patient_age)
-    print("Pulse Rate : " + patients[int(id) - 1].patient_pulse)
-    print("Oxygen Level : " + patients[int(id) - 1].patient_oxygen_level)
-    print("Blood Pressure : " + patients[int(id) - 1].patient_blood_pressure)
+    #print("Name : " + patients[int(id) - 1].patient_name)
+    #print("Age : " + patients[int(id) - 1].patient_age)
+    #print("Pulse Rate : " + patients[int(id) - 1].patient_pulse)
+    #print("Oxygen Level : " + patients[int(id) - 1].patient_oxygen_level)
+    #print("Blood Pressure : " + patients[int(id) - 1].patient_blood_pressure)
     print ('----------------------------------------------------------------------------------')
 
     curr = data[0][id]
